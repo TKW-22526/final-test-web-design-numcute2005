@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tài Khoản — MANNHAUS</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<div class="topbar">🚚 Miễn phí vận chuyển cho đơn hàng trên 500.000₫ &nbsp;|&nbsp; Đổi trả miễn phí trong 30 ngày</div>
+<nav class="navbar">
+  <a href="../index.html" class="navbar-logo">MANN<span>HAUS</span></a>
+  <div class="navbar-nav">
+    <a href="../index.html">Trang Chủ</a>
+    <a href="san-pham.html" id="nav-sp">Sản Phẩm</a>
+    <a href="bo-suu-tap.html" id="nav-bst">Bộ Sưu Tập</a>
+    <a href="khuyen-mai.html" id="nav-km">Khuyến Mãi</a>
+    <a href="blog.html" id="nav-blog">Blog</a>
+    <a href="lien-he.html" id="nav-lh">Liên Hệ</a>
+  </div>
+  <div class="navbar-actions">
+    <a href="tim-kiem.html">🔍 Tìm Kiếm</a>
+    <a href="yeu-thich.html">♡ Yêu Thích</a>
+    <a href="gio-hang.html">🛍 Giỏ Hàng <span class="cart-badge" style="display:none">0</span></a>
+    <a href="tai-khoan.html">👤 Tài Khoản</a>
+  </div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',function(){});</script>
+
+<div class="page-header" style="padding:48px 60px 40px;">
+  <div class="page-header-content">
+    <div class="breadcrumb"><a href="../index.html">Trang Chủ</a><span class="breadcrumb-sep">/</span>Tài Khoản</div>
+    <h1 class="page-header-title">Tài<br><em>Khoản</em></h1>
+  </div>
+</div>
+<section class="section" style="padding-top:0;background:var(--off-white);">
+  <div class="account-layout">
+    <div class="account-sidebar">
+      <div style="text-align:center;margin-bottom:32px;">
+        <div style="width:72px;height:72px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;color:var(--black);margin:0 auto 12px;">A</div>
+        <div style="font-weight:600;color:var(--white);font-size:15px;">Nguyễn Tấn Trường</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.4);letter-spacing:1px;margin-top:4px;">Thành viên Vàng</div>
+      </div>
+      <nav class="account-nav">
+        <a href="#" class="active" onclick="switchTab(event,'orders')">📦 Đơn Hàng Của Tôi</a>
+        <a href="#" onclick="switchTab(event,'profile')">👤 Thông Tin Cá Nhân</a>
+        <a href="#" onclick="switchTab(event,'address')">📍 Địa Chỉ Giao Hàng</a>
+        <a href="yeu-thich.html">♡ Danh Sách Yêu Thích</a>
+        <a href="#" onclick="switchTab(event,'points')">⭐ Điểm Thưởng</a>
+        <a href="#" onclick="showNotification('Đã đăng xuất thành công')">🚪 Đăng Xuất</a>
+      </nav>
+    </div>
+    <div class="account-content" id="tab-content">
+      <h2 style="font-family:var(--font-display);font-size:28px;font-weight:400;margin-bottom:24px;">Đơn Hàng Của Tôi</h2>
+      <div style="border:1px solid var(--light-gray);margin-bottom:16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--light-gray);">
+          <div><div style="font-weight:600;font-size:14px;">#MH2025001</div><div style="font-size:12px;color:var(--muted);margin-top:2px;">15 Nov 2025 — 3 sản phẩm</div></div>
+          <div style="display:flex;align-items:center;gap:16px;"><span style="background:#e8f5e9;color:#2e7d32;padding:4px 12px;font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Đã Giao</span><span style="font-weight:700;">890.000₫</span></div>
+        </div>
+        <div style="padding:16px 20px;display:flex;gap:12px;align-items:center;">
+          <img src="../assets/prod-1.jpg" style="width:60px;height:80px;object-fit:cover;" alt="">
+          <img src="../assets/prod-2.jpg" style="width:60px;height:80px;object-fit:cover;" alt="">
+          <div style="margin-left:auto;"><button class="btn btn-dark" style="font-size:11px;padding:10px 20px;" onclick="showNotification('Đang xử lý yêu cầu mua lại...')">Mua Lại</button></div>
+        </div>
+      </div>
+      <div style="border:1px solid var(--light-gray);">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--light-gray);">
+          <div><div style="font-weight:600;font-size:14px;">#MH2025002</div><div style="font-size:12px;color:var(--muted);margin-top:2px;">20 Oct 2025 — 1 sản phẩm</div></div>
+          <div style="display:flex;align-items:center;gap:16px;"><span style="background:#fff3e0;color:#e65100;padding:4px 12px;font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Đang Giao</span><span style="font-weight:700;">650.000₫</span></div>
+        </div>
+        <div style="padding:16px 20px;display:flex;gap:12px;align-items:center;">
+          <img src="../assets/prod-3.jpg" style="width:60px;height:80px;object-fit:cover;" alt="">
+          <div style="margin-left:auto;"><button class="btn" style="border:1px solid var(--light-gray);font-size:11px;padding:10px 20px;letter-spacing:1.5px;text-transform:uppercase;" onclick="showNotification('Đang theo dõi vận chuyển...')">Theo Dõi</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+function switchTab(e,tab){
+  e.preventDefault();
+  document.querySelectorAll('.account-nav a').forEach(a=>a.classList.remove('active'));
+  e.target.classList.add('active');
+}
+</script>
+
+<div class="promo-strip">
+  <div class="promo-strip-item"><div class="promo-strip-icon">🚚</div><div><div class="promo-strip-title">Miễn Phí Vận Chuyển</div><div class="promo-strip-text">Từ 500.000₫</div></div></div>
+  <div class="promo-strip-item"><div class="promo-strip-icon">↩</div><div><div class="promo-strip-title">Đổi Trả 30 Ngày</div><div class="promo-strip-text">Không cần lý do</div></div></div>
+  <div class="promo-strip-item"><div class="promo-strip-icon">🔒</div><div><div class="promo-strip-title">Bảo Mật Thanh Toán</div><div class="promo-strip-text">An toàn 100%</div></div></div>
+</div>
+<div class="newsletter-section"><div class="tag-label">Đăng Ký</div><h3 class="newsletter-title">Nhận Bản Tin</h3><p class="newsletter-desc">Nhận ưu đãi độc quyền mỗi tuần</p><form class="newsletter-form"><input type="email" placeholder="Email của bạn..." required><button type="submit">Đăng Ký</button></form></div>
+<footer class="footer"><div class="footer-grid">
+  <div><div class="footer-brand-name">MANN<span>HAUS</span></div><p class="footer-desc">Thời trang nam cao cấp Việt Nam.</p><div class="footer-socials"><a class="footer-social" href="#">f</a><a class="footer-social" href="#">ig</a></div></div>
+  <div><div class="footer-col-title">Danh Mục</div><div class="footer-links"><a href="san-pham.html">Áo Thun</a><a href="san-pham.html">Sơ Mi</a><a href="san-pham.html">Quần</a><a href="san-pham.html">Áo Khoác</a></div></div>
+  <div><div class="footer-col-title">Hỗ Trợ</div><div class="footer-links"><a href="lien-he.html">Liên Hệ</a><a href="huong-dan-size.html">Hướng Dẫn Size</a><a href="chinh-sach.html">Chính Sách</a></div></div>
+  <div><div class="footer-col-title">Thông Tin</div><div class="footer-links"><a href="ve-chung-toi.html">Về Chúng Tôi</a><a href="tai-khoan.html">Tài Khoản</a></div></div>
+</div><div class="footer-bottom"><span>© 2025 MANNHAUS.</span><span>Dự án kết thúc môn</span></div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

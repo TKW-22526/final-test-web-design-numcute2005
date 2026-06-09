@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yêu Thích — MANNHAUS</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<div class="topbar">🚚 Miễn phí vận chuyển cho đơn hàng trên 500.000₫ &nbsp;|&nbsp; Đổi trả miễn phí trong 30 ngày</div>
+<nav class="navbar">
+  <a href="../index.html" class="navbar-logo">MANN<span>HAUS</span></a>
+  <div class="navbar-nav">
+    <a href="../index.html">Trang Chủ</a>
+    <a href="san-pham.html" id="nav-sp">Sản Phẩm</a>
+    <a href="bo-suu-tap.html" id="nav-bst">Bộ Sưu Tập</a>
+    <a href="khuyen-mai.html" id="nav-km">Khuyến Mãi</a>
+    <a href="blog.html" id="nav-blog">Blog</a>
+    <a href="lien-he.html" id="nav-lh">Liên Hệ</a>
+  </div>
+  <div class="navbar-actions">
+    <a href="tim-kiem.html">🔍 Tìm Kiếm</a>
+    <a href="yeu-thich.html">♡ Yêu Thích</a>
+    <a href="gio-hang.html">🛍 Giỏ Hàng <span class="cart-badge" style="display:none">0</span></a>
+    <a href="tai-khoan.html">👤 Tài Khoản</a>
+  </div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',function(){});</script>
+
+<div class="page-header">
+  <div class="page-header-content">
+    <div class="breadcrumb"><a href="../index.html">Trang Chủ</a><span class="breadcrumb-sep">/</span>Yêu Thích</div>
+    <h1 class="page-header-title">Danh Sách<br><em>Yêu Thích</em></h1>
+  </div>
+</div>
+<section class="section" style="background:var(--white);">
+  <div class="wishlist-grid">
+    <div class="product-card">
+      <div class="product-card-img">
+        <span class="product-badge badge-hot">Hot</span>
+        <img src="../assets/prod-1.jpg" alt="">
+        <div class="product-card-actions"><button onclick="addToCart(1,'Áo Thun Cotton',350000)">Thêm Vào Giỏ</button><button onclick="toggleWishlist(this,1)" style="flex:0;width:44px;color:var(--gold);">♥</button></div>
+      </div>
+      <div class="product-card-cat">Áo Thun</div>
+      <div class="product-card-name">Áo Thun Cotton Basic</div>
+      <div class="product-card-price"><span class="price-current">350.000₫</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-card-img">
+        <img src="../assets/prod-3.jpg" alt="">
+        <div class="product-card-actions"><button onclick="addToCart(3,'Quần Jeans',650000)">Thêm Vào Giỏ</button><button onclick="toggleWishlist(this,3)" style="flex:0;width:44px;color:var(--gold);">♥</button></div>
+      </div>
+      <div class="product-card-cat">Quần Jeans</div>
+      <div class="product-card-name">Quần Jeans Slim Tapered</div>
+      <div class="product-card-price"><span class="price-current">650.000₫</span></div>
+    </div>
+    <div class="product-card">
+      <div class="product-card-img">
+        <img src="../assets/prod-4.jpg" alt="">
+        <div class="product-card-actions"><button onclick="addToCart(4,'Áo Khoác Dù',890000)">Thêm Vào Giỏ</button><button onclick="toggleWishlist(this,4)" style="flex:0;width:44px;color:var(--gold);">♥</button></div>
+      </div>
+      <div class="product-card-cat">Áo Khoác</div>
+      <div class="product-card-name">Áo Khoác Dù Windbreaker</div>
+      <div class="product-card-price"><span class="price-current">890.000₫</span></div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;border:2px dashed var(--light-gray);aspect-ratio:3/4;flex-direction:column;gap:12px;cursor:pointer;" onclick="window.location='san-pham.html'">
+      <div style="font-size:36px;">+</div>
+      <div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);">Thêm Sản Phẩm</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:40px;">
+    <button class="btn btn-dark" onclick="document.querySelectorAll('.product-card').forEach(c=>addToCart(parseInt(Math.random()*10),'Sản Phẩm Yêu Thích',350000))">Thêm Tất Cả Vào Giỏ</button>
+  </div>
+</section>
+
+<div class="promo-strip">
+  <div class="promo-strip-item"><div class="promo-strip-icon">🚚</div><div><div class="promo-strip-title">Miễn Phí Vận Chuyển</div><div class="promo-strip-text">Từ 500.000₫</div></div></div>
+  <div class="promo-strip-item"><div class="promo-strip-icon">↩</div><div><div class="promo-strip-title">Đổi Trả 30 Ngày</div><div class="promo-strip-text">Không cần lý do</div></div></div>
+  <div class="promo-strip-item"><div class="promo-strip-icon">🔒</div><div><div class="promo-strip-title">Bảo Mật Thanh Toán</div><div class="promo-strip-text">An toàn 100%</div></div></div>
+</div>
+<div class="newsletter-section"><div class="tag-label">Đăng Ký</div><h3 class="newsletter-title">Nhận Bản Tin</h3><p class="newsletter-desc">Nhận ưu đãi độc quyền mỗi tuần</p><form class="newsletter-form"><input type="email" placeholder="Email của bạn..." required><button type="submit">Đăng Ký</button></form></div>
+<footer class="footer"><div class="footer-grid">
+  <div><div class="footer-brand-name">MANN<span>HAUS</span></div><p class="footer-desc">Thời trang nam cao cấp Việt Nam.</p><div class="footer-socials"><a class="footer-social" href="#">f</a><a class="footer-social" href="#">ig</a></div></div>
+  <div><div class="footer-col-title">Danh Mục</div><div class="footer-links"><a href="san-pham.html">Áo Thun</a><a href="san-pham.html">Sơ Mi</a><a href="san-pham.html">Quần</a><a href="san-pham.html">Áo Khoác</a></div></div>
+  <div><div class="footer-col-title">Hỗ Trợ</div><div class="footer-links"><a href="lien-he.html">Liên Hệ</a><a href="huong-dan-size.html">Hướng Dẫn Size</a><a href="chinh-sach.html">Chính Sách</a></div></div>
+  <div><div class="footer-col-title">Thông Tin</div><div class="footer-links"><a href="ve-chung-toi.html">Về Chúng Tôi</a><a href="tai-khoan.html">Tài Khoản</a></div></div>
+</div><div class="footer-bottom"><span>© 2025 MANNHAUS.</span><span>Dự án kết thúc môn</span></div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

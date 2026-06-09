@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khuyến Mãi — MANNHAUS</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<div class="topbar">🚚 Miễn phí vận chuyển cho đơn hàng trên 500.000₫ &nbsp;|&nbsp; Đổi trả miễn phí trong 30 ngày</div>
+<nav class="navbar">
+  <a href="../index.html" class="navbar-logo">MANN<span>HAUS</span></a>
+  <div class="navbar-nav">
+    <a href="../index.html">Trang Chủ</a>
+    <a href="san-pham.html" id="nav-sp">Sản Phẩm</a>
+    <a href="bo-suu-tap.html" id="nav-bst">Bộ Sưu Tập</a>
+    <a href="khuyen-mai.html" id="nav-km">Khuyến Mãi</a>
+    <a href="blog.html" id="nav-blog">Blog</a>
+    <a href="lien-he.html" id="nav-lh">Liên Hệ</a>
+  </div>
+  <div class="navbar-actions">
+    <a href="tim-kiem.html">🔍 Tìm Kiếm</a>
+    <a href="yeu-thich.html">♡ Yêu Thích</a>
+    <a href="gio-hang.html">🛍 Giỏ Hàng <span class="cart-badge" style="display:none">0</span></a>
+    <a href="tai-khoan.html">👤 Tài Khoản</a>
+  </div>
+</nav>
+<script>document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById("nav-km");if(el)el.classList.add("active");});</script>
+
+<div class="page-header" style="background:var(--black);">
+  <div class="page-header-content">
+    <div class="breadcrumb"><a href="../index.html">Trang Chủ</a><span class="breadcrumb-sep">/</span>Khuyến Mãi</div>
+    <h1 class="page-header-title" style="color:var(--gold);">Khuyến Mãi<br><em style="color:var(--white);">Hấp Dẫn</em></h1>
+  </div>
+</div>
+<section class="section" style="background:var(--white);">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--light-gray);margin-bottom:40px;">
+    <div style="background:var(--black);padding:60px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Flash Sale</div>
+      <div style="font-family:var(--font-display);font-size:80px;font-weight:300;color:var(--white);line-height:1;">30<span style="font-size:36px;">%</span></div>
+      <div style="font-size:16px;color:rgba(255,255,255,.6);margin:12px 0 28px;">Toàn bộ sơ mi &amp; áo thun</div>
+      <div style="display:flex;gap:12px;">
+        <div style="background:rgba(255,255,255,.08);padding:16px 20px;text-align:center;min-width:64px;"><div style="font-family:var(--font-display);font-size:28px;color:var(--gold);" id="hh">02</div><div style="font-size:10px;color:rgba(255,255,255,.4);letter-spacing:1px;">GIỜ</div></div>
+        <div style="background:rgba(255,255,255,.08);padding:16px 20px;text-align:center;min-width:64px;"><div style="font-family:var(--font-display);font-size:28px;color:var(--gold);" id="mm">34</div><div style="font-size:10px;color:rgba(255,255,255,.4);letter-spacing:1px;">PHÚT</div></div>
+        <div style="background:rgba(255,255,255,.08);padding:16px 20px;text-align:center;min-width:64px;"><div style="font-family:var(--font-display);font-size:28px;color:var(--gold);" id="ss">18</div><div style="font-size:10px;color:rgba(255,255,255,.4);letter-spacing:1px;">GIÂY</div></div>
+      </div>
+      <a href="san-pham.html" class="btn btn-gold" style="margin-top:28px;width:fit-content;">Mua Ngay →</a>
+    </div>
+    <div style="overflow:hidden;"><img src="../assets/km-banner.jpg" alt="" style="width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+  <div class="section-header"><div><div class="section-subtitle">Ưu Đãi</div><h2 class="section-title">Sản Phẩm<br><em>Giảm Giá</em></h2></div></div>
+  <div class="product-grid">
+    <div class="product-card"><div class="product-card-img"><span class="product-badge badge-sale">-30%</span><img src="../assets/prod-2.jpg" alt=""><div class="product-card-actions"><button onclick="addToCart(2,'Sơ Mi Oxford',420000)">Thêm Vào Giỏ</button><button onclick="toggleWishlist(this,2)" style="flex:0;width:44px;">♡</button></div></div><div class="product-card-cat">Sơ Mi</div><div class="product-card-name">Sơ Mi Oxford Slim Fit</div><div class="product-card-price"><span class="price-current">420.000₫</span><span class="price-old">600.000₫</span><span class="price-off">-30%</span></div></div>
+    <div class="product-card"><div class="product-card-img"><span class="product-badge badge-sale">-25%</span><img src="../assets/prod-1.jpg" alt=""><div class="product-card-actions"><button onclick="addToCart(1,'Áo Thun Cotton',262000)">Thêm Vào Giỏ</button><button onclick="toggleWishlist(this,1)" style="flex:0;width:44px;">♡</button></div></div><div class="product-card-cat">Áo Thun</div><div class="product-card-name">Áo Thun Cotton Basic</div><div class="product-card-price"><span class="price-current">262.000₫</span><span class="price-old">350.000₫</span><span class="price-off">-25%</span></div></div>
+    <div class="product-card"><div class="product-card-img"><span class="product-badge badge-sale">-20%</span><img src="../assets/prod-3.jpg" alt=""><div class="product-card-actions"><button onclick="addToCart(3,'Quần Jeans',520000)">Thêm Vào Giỏ</button><button onclick="toggleWishlist(this,3)" style="flex:0;width:44px;">♡</button></div></div><div class="product-card-cat">Quần</div><div class="product-card-name">Quần Jeans Slim Fit</div><div class="product-card-price"><span class="price-current">520.000₫</span><span class="price-old">650.000₫</span><span class="price-off">-20%</span></div></div>
+    <div class="product-card"><div class="product-card-img"><span class="product-badge badge-sale">-15%</span><img src="../assets/prod-4.jpg" alt=""><div class="product-card-actions"><button onclick="addToCart(4,'Áo Khoác',756000)">Thêm Vào Giỏ</button><button onclick="toggleWishlist(this,4)" style="flex:0;width:44px;">♡</button></div></div><div class="product-card-cat">Áo Khoác</div><div class="product-card-name">Áo Khoác Windbreaker</div><div class="product-card-price"><span class="price-current">756.000₫</span><span class="price-old">890.000₫</span><span class="price-off">-15%</span></div></div>
+  </div>
+</section>
+<script>
+var end = new Date(Date.now() + 2*3600000 + 34*60000 + 18000);
+function tick() {
+  var d = end - Date.now(), h = Math.floor(d/3600000), m = Math.floor((d%3600000)/60000), s = Math.floor((d%60000)/1000);
+  if(d < 0) return;
+  document.getElementById('hh').textContent = String(h).padStart(2,'0');
+  document.getElementById('mm').textContent = String(m).padStart(2,'0');
+  document.getElementById('ss').textContent = String(s).padStart(2,'0');
+}
+setInterval(tick, 1000); tick();
+</script>
+
+<div class="promo-strip">
+  <div class="promo-strip-item"><div class="promo-strip-icon">🚚</div><div><div class="promo-strip-title">Miễn Phí Vận Chuyển</div><div class="promo-strip-text">Từ 500.000₫</div></div></div>
+  <div class="promo-strip-item"><div class="promo-strip-icon">↩</div><div><div class="promo-strip-title">Đổi Trả 30 Ngày</div><div class="promo-strip-text">Không cần lý do</div></div></div>
+  <div class="promo-strip-item"><div class="promo-strip-icon">🔒</div><div><div class="promo-strip-title">Bảo Mật Thanh Toán</div><div class="promo-strip-text">An toàn 100%</div></div></div>
+</div>
+<div class="newsletter-section"><div class="tag-label">Đăng Ký</div><h3 class="newsletter-title">Nhận Bản Tin</h3><p class="newsletter-desc">Nhận ưu đãi độc quyền mỗi tuần</p><form class="newsletter-form"><input type="email" placeholder="Email của bạn..." required><button type="submit">Đăng Ký</button></form></div>
+<footer class="footer"><div class="footer-grid">
+  <div><div class="footer-brand-name">MANN<span>HAUS</span></div><p class="footer-desc">Thời trang nam cao cấp Việt Nam.</p><div class="footer-socials"><a class="footer-social" href="#">f</a><a class="footer-social" href="#">ig</a></div></div>
+  <div><div class="footer-col-title">Danh Mục</div><div class="footer-links"><a href="san-pham.html">Áo Thun</a><a href="san-pham.html">Sơ Mi</a><a href="san-pham.html">Quần</a><a href="san-pham.html">Áo Khoác</a></div></div>
+  <div><div class="footer-col-title">Hỗ Trợ</div><div class="footer-links"><a href="lien-he.html">Liên Hệ</a><a href="huong-dan-size.html">Hướng Dẫn Size</a><a href="chinh-sach.html">Chính Sách</a></div></div>
+  <div><div class="footer-col-title">Thông Tin</div><div class="footer-links"><a href="ve-chung-toi.html">Về Chúng Tôi</a><a href="tai-khoan.html">Tài Khoản</a></div></div>
+</div><div class="footer-bottom"><span>© 2025 MANNHAUS.</span><span>Dự án kết thúc môn</span></div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
